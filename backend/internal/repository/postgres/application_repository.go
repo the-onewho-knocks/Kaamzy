@@ -21,6 +21,7 @@ type ApplicationRepository struct {
 func NewApplicationRepository(db *pgxpool.Pool) *ApplicationRepository {
 	return &ApplicationRepository{db: db}
 }
+//my name is gaurav
 
 func (r *ApplicationRepository) Create(ctx context.Context, app *models.Application) error {
 	query := `
